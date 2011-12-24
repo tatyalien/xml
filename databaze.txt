@@ -1,0 +1,50 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.4
+-- http://www.phpmyadmin.net
+--
+-- Poèítaè: localhost
+-- Vygenerováno: Pátek 04. listopadu 2011, 14:08
+-- Verze MySQL: 5.1.41
+-- Verze PHP: 5.3.1
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Databáze: `dtb_icq`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabulky `historie`
+--
+
+CREATE TABLE IF NOT EXISTS `historie` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `t_CONTACT` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
+  `t_FROM` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
+  `t_TIME` time DEFAULT NULL,
+  `t_DATE` date DEFAULT NULL,
+  `t_PROTOCOL` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
+  `t_ID` int(11) DEFAULT NULL,
+  `t_TYPE` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
+  `t_MESSAGE` text COLLATE utf8_czech_ci,
+  `t_URL` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
+  `t_FILE` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci AUTO_INCREMENT=1 ;
+
+--
+-- Vypisuji data pro tabulku `historie`
+--
+
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

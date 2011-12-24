@@ -1,0 +1,164 @@
+html {
+	/*
+    font: 16px/1.5 "Trebuchet MS", "Geneva CE", lucida, sans-serif;
+	border-top: 4.7em solid #F4EBDB;
+    */
+    color: black;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+	height: 100%;
+	max-height: 100%;
+	background: #f0f0f0 url(../images/poz_zahlavi.gif) repeat;
+	color: white;
+}
+#zahlavi{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/* velikost divu */
+    height: 100px;
+    /* Disable scrollbars. Set to "scroll" to enable */ 
+	overflow: hidden; 
+    	background-color: white;
+    /* pro viditelnost menu... */
+    color: black;
+	overflow: visible !important;
+	z-index: 1000; 
+    border:1px solid silver;
+}
+#content {
+    /* background-color:transparent; */
+	background-color:red;
+}
+
+#obal_obsahu {
+	position: fixed;
+    /* Set top value to HeightOfFrameDiv */
+	top: 101px; 
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	background-color:transparent;
+    /* border:1px solid silver; */
+}
+#menu_leve {
+	float: left;
+	width: 175px;
+    	color: white;
+    	background-color:transparent;
+}
+#obsah_vnitrni {
+    margin: 1px 175px 1px 175px;
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+    min-height:50em;
+    background-color:#4c4c4c;
+    color: #E0A90C;
+    border:1px solid silver;
+}
+#menu_prave{
+	/* šířka obalu (stránky) */
+	width:169px;
+	float:right;
+	padding-top:5px;
+	padding-left:5px;
+    	padding-bottom: 5px;
+	text-align:left;
+    	background-color:transparent;
+    	color: #E0A90C;
+}
+#menu_prave strong {
+	color: white;
+}
+#zapati{
+	text-align:center;
+	background-color:transparent;
+	color: #E0A90C;
+}
+a {
+    color: lime;
+    font-weight: bold;
+    text-decoration:none;
+}
+a:hover {
+	background:#E0A90C;
+	color:#fff;
+    text-decoration:underline;
+}
+a.obrazek {
+    border: none;
+    background: none;
+    text-decoration:none;
+    /*
+    padding : 5px 1px 1px 1px;
+    width: 10px;
+    */
+}
+.TitulekMenu  {
+    text-align: left;
+    font-weight: bold;
+    color:#E0A90C;
+    padding:2px 2px 2px 5px;
+}
+a.obrazek:hover {
+    border: none;
+	background:#E0A90C;
+	color:#fff;
+    text-decoration:none;
+    /*
+    padding : 5px 1px 1px 1px;
+    */
+}
+
+h2 {
+    color: white;
+    margin: 0px 0px 0px 0px;
+}
+ul {
+    margin: 0px 0px 0px 0px;    
+}
+div.flash { 
+    background-color:#fff9d7;
+    border:1px solid #e2c822;
+    color:black;
+    margin:1em 0;
+    padding:1em;
+}
+div.flash.warning {
+    color:red;
+}
+div.flash.info {
+    color:green;
+}
+.required {
+    color: white;
+    font-weight: bold;
+}
+h1 {
+    line-height: 48px; 
+    font-size: 36px; 
+    margin: 0px 0px 0px 0px;  
+    color: black; 
+    text-shadow: 0px 0px 10px #00ff00;
+}
+a.button {
+    border: 1px solid #DDDDDD;   
+    padding : 1px 5px 1px 5px;
+    text-decoration: none;
+    line-height: 25px;
+    /*margin: 7px 10px 15px 10px;*/
+}
+.help-text {
+    color: yellow;
+    font-style: italic;
+}
+.help-text strong {
+    color: lime;
+}
