@@ -1,0 +1,6 @@
+# komentáø – toto je ignorováno
+# p/TODO # ignoruj soubor TODO pouze v koøenovém adresáøi, ne v podadresáøích
+# ignoruji složku export a import + soubory v tìchto složkách
+/export/
+/import/
+/statistika/

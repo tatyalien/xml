@@ -1,0 +1,23 @@
+#order allow,deny
+#
+# POVOLENÍ ZOBRAZENÍ STRÁNKY JEN URÈITÝM IP ADRESÁM
+#
+#allow from 78.102.166.50	# Domov
+#
+#
+# HEZKÉ ODKAZY
+#
+# Základní menu, pøihlašování, odhlašování, verze.
+RewriteEngine on
+RewriteRule ^help index.php?clanek=help
+RewriteRule ^postup index.php?clanek=postup
+
+# IMPORT
+RewriteRule ^import/xml/hlavni index.php?clanek=import_xml_hlavni
+RewriteRule ^import/xml/zmeny index.php?clanek=import_xml_zmeny
+
+# VYMAZAT
+RewriteRule ^dtb/vymazat index.php?clanek=dtb_vymazat
+
+# EXPORT
+RewriteRule ^export/sloucena_databaze index.php?clanek=export_sloucena_databaze
