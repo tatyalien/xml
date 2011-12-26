@@ -1,6 +1,9 @@
 # komentáø – toto je ignorováno
 # p/TODO # ignoruj soubor TODO pouze v koøenovém adresáøi, ne v podadresáøích
 # ignoruji složku export a import + soubory v tìchto složkách
-/export/
-/import/
-/statistika/
+# slozky statistika, export, import jsu potrebne pro bech programu!!!
+#
+export/*.xml
+import/*.txt
+import/*.xml
+statistika/*.txt
