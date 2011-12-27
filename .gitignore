@@ -3,4 +3,7 @@
 # ignoruji složku export a import + soubory v tìchto složkách
 # slozky statistika, export, import jsu potrebne pro bech programu!!!
 #
-
+/export/*.xml
+/statistika/*.txt
+!/statisti/info.txt
+/import/*.xml
