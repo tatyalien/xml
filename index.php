@@ -34,7 +34,7 @@ if (file_exists("scripts/$nactena_stranka.php")) {
 	</div> <!-- leve menu konec -->
 	
 	<div id="obsah_vnitrni"> <!-- text -->
-        <?php if($odhlaseni_na_tvrdo != '') echo '<tag class="error">'.$odhlaseni_na_tvrdo.'</tag>'; ?>
+        <?php if(isset($odhlaseni_na_tvrdo) && $odhlaseni_na_tvrdo != '') echo '<tag class="error">'.$odhlaseni_na_tvrdo.'</tag>'; ?>
 		<?php require "content/$nactena_stranka.php"; // sem nacpes zobrazovaci cast stranky ?>
 	</div> <!-- obsah_vnitrni konec -->
 

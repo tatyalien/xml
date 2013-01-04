@@ -1,4 +1,4 @@
-<?
+<?php
 
 // nepřihlášený uživatel
 echo "<tag class='TitulekMenu'>XML</tag><br>";
